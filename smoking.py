@@ -13,7 +13,7 @@ import smtplib
 from email.message import EmailMessage
 import cv2 as cv
 
-modelFilename= "D:/Object detection/finalsmoking/runs/detect/train/weights/best.pt"
+modelFilename= "train/weights/best.pt"
 PPEmodel = YOLO(modelFilename)
 
 classes = ['smoking']
@@ -38,9 +38,9 @@ def draw_square(img, x1, y1, side_length, mycolor):
 
 def send_email():
 
-    sender_email = "viknsh3@gmail.com"
-    receiver_email = "vijaytanz12@gmail.com"
-    password = "xibc hwek pcch jvsg"
+    sender_email = ""
+    receiver_email = ""
+    password = ""
 
 
 
